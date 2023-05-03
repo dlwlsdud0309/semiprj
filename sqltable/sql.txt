@@ -1,0 +1,34 @@
+--==========================semi_이진영-megacoffee================================
+--사용자 semiprj 생성
+create user semiprj identified by 123456;
+grant connect,resource,dba to semiprj;
+
+show user;
+
+--테이블 coffeereceipt 생성
+create table coffeereceipt(
+order_no number,
+content varchar2(4000));
+
+select * from coffeereceipt;
+
+--시퀀스 order_SEQ 생성
+CREATE SEQUENCE order_SEQ
+INCREMENT BY 1
+START WITH 500
+NOMAXVALUE
+NOCYCLE
+NOCACHE;
+
+insert into coffeereceipt values(order_SEQ.NEXTVAL, null);
+insert into coffeereceipt values(order_SEQ.NEXTVAL, null);
+
+insert into coffeereceipt values(order_SEQ.NEXTVAL,'주문내역확인');
+
+--데이터 확인
+select * from coffeereceipt;
+drop SEQUENCE order_SEQ;
+drop table coffeereceipt;
+
+--대기번호 출력
+select max(order_no) from coffeereceipt;
