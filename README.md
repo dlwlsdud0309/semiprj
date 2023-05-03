@@ -10,5 +10,6 @@ SEMI PROJECT
 URI : https://ovenapp.io/view/AmvoR30Oz5Xx0DiR9LHUdFCrdJDOZd7I/jdmk8
 
 작업 기간 22.12.06 - 22.12.08
+결과물 : https://youtu.be/8E0yznD8zL0
 
 리펙토링 시작 23.05.03
