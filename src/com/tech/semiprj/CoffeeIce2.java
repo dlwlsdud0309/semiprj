@@ -10,7 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class CoffeeIce extends JPanel{
+public class CoffeeIce2 extends JPanel{
 //	필드구성
 	JPanel i_americano, i_hazelnutlatte, i_coldbrewlatte;
 	JButton i_americanoBtn, i_hazelnutlatteBtn, i_coldbrewlatteBtn;
@@ -18,21 +18,7 @@ public class CoffeeIce extends JPanel{
 			i_americanoPrice, i_hazelnutlattePrice, i_coldbrewlattePrice;
 	String iceStr="";
 	
-	//필드 배열 사용
-	JPanel iceBeverage_panel[] = {
-		i_americano, i_hazelnutlatte, i_coldbrewlatte
-	};
-	JButton iceBeverage_buttons[] = {
-		i_americanoBtn, i_hazelnutlatteBtn, i_coldbrewlatteBtn
-	};
-	JLabel iceBeverage_names[] = {
-		i_americanoName, i_hazelnutlatteName, i_coldbrewlatteName	
-	};
-	JLabel iceBeverage_prices[] = {
-		i_americanoPrice, i_hazelnutlattePrice, i_coldbrewlattePrice
-	};
-	
-	public CoffeeIce() {
+	public CoffeeIce2() {
 		setBackground(new Color(230, 230, 230));
 		
 		
