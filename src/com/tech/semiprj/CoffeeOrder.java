@@ -196,9 +196,9 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 		ch.h_cafemochaBtn.addActionListener(this);
 		ch.h_vanillalatteBtn.addActionListener(this);
 		ch.h_tiramisulatteBtn.addActionListener(this);
-		ci.i_americanoBtn.addActionListener(this);
-		ci.i_hazelnutlatteBtn.addActionListener(this);
-		ci.i_coldbrewlatteBtn.addActionListener(this);
+//		ci.i_americanoBtn.addActionListener(this);
+//		ci.i_hazelnutlatteBtn.addActionListener(this);
+//		ci.i_coldbrewlatteBtn.addActionListener(this);
 		ds.honeybreadBtn.addActionListener(this);
 		ds.smorecookiesmatchaBtn.addActionListener(this);
 		ds.icecreamcroiffleBtn.addActionListener(this);
@@ -231,15 +231,15 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 	         ordertotal+=3900;
 	         ordermap.put("(HOT)티라미수라떼",++cnt4);
 //	      아이스
-	      }else if(e.getSource()==(ci.i_americanoBtn)) {
-	         ordertotal+=2000;
-	         ordermap.put("(ICE)아메리카노",++cnt5);
-	      }else if(e.getSource()==(ci.i_hazelnutlatteBtn)) {
-	         ordertotal+=3200;
-	         ordermap.put("(ICE)헤이즐넛라떼",++cnt6);
-	      }else if(e.getSource()==(ci.i_coldbrewlatteBtn)) {
-	         ordertotal+=3800;
-	         ordermap.put("(ICE)콜드브루라떼",++cnt7);
+//	      }else if(e.getSource()==(ci.i_americanoBtn)) {
+//	         ordertotal+=2000;
+//	         ordermap.put("(ICE)아메리카노",++cnt5);
+//	      }else if(e.getSource()==(ci.i_hazelnutlatteBtn)) {
+//	         ordertotal+=3200;
+//	         ordermap.put("(ICE)헤이즐넛라떼",++cnt6);
+//	      }else if(e.getSource()==(ci.i_coldbrewlatteBtn)) {
+//	         ordertotal+=3800;
+//	         ordermap.put("(ICE)콜드브루라떼",++cnt7);
 //	      디저트
 	      } else if(e.getSource()==(ds.honeybreadBtn)) {
 		     ordertotal+=4500;
