@@ -196,6 +196,11 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 		ch.h_cafemochaBtn.addActionListener(this);
 		ch.h_vanillalatteBtn.addActionListener(this);
 		ch.h_tiramisulatteBtn.addActionListener(this);
+		
+		for (int i = 0; i < ci.iceBeverage_labelsNames.length; i++) {
+			ci.iceBeverage_buttons[i].addActionListener(this);
+		}
+		
 //		ci.i_americanoBtn.addActionListener(this);
 //		ci.i_hazelnutlatteBtn.addActionListener(this);
 //		ci.i_coldbrewlatteBtn.addActionListener(this);
