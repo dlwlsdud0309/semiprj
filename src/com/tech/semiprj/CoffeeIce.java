@@ -58,6 +58,10 @@ public class CoffeeIce extends JPanel{
 			iceBeverage_labelsPrices[i].setForeground(new Color(192, 57, 43));
 			
 			
+			//버튼 위치 지정하고
+			//이미지 부착
+			
+			
 			iceBeverage_buttons[i].add(iceBeverage_panel[i]);
 			add(iceBeverage_panel[i]);
 		}
