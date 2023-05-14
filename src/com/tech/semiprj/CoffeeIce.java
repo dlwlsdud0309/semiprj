@@ -35,7 +35,11 @@ public class CoffeeIce extends JPanel{
 		setLayout(null);
 		setBackground(new Color(230, 230, 230));
 		
+		iceBeverage_panel = new JPanel[i_strNames.length];
+		iceBeverage_labelsNames = new JLabel[i_strNames.length];
+		iceBeverage_labelsPrices = new JLabel[i_strNames.length];
 		iceBeverage_buttons = new JButton[i_strNames.length];
+		
 		for (int i = 0; i < i_strNames.length; i++) {
 			//ÆÇ³Ú
 			iceBeverage_panel[i] = new JPanel();
@@ -51,19 +55,30 @@ public class CoffeeIce extends JPanel{
 			iceBeverage_labelsNames[i].setFont(new Font("¸¼Àº°íµñ", Font.BOLD, 15)); //ÆùÆ® ÁöÁ¤
 			iceBeverage_labelsNames[i].setForeground(new Color(51,51,51)); //ÀÌ¸§Ç¥»ö
 			
+			if(iceBeverage_labelsNames[i].toString().equals("iceamericano")) {
+				iceBeverage_labelsNames[i].setBounds(25, 80, 150, 150);
+			}else {
+				iceBeverage_labelsNames[i].setBounds(15, 80, 150, 150);
+			}
+			
 			//¶óº§prices¿¡ strPrices ºÎÂø
 			iceBeverage_labelsPrices[i] = new JLabel(i_strPrices[i]);
-			//.setBounds(60, 100, 200, 150);
 			iceBeverage_labelsPrices[i].setFont(new Font("¸¼Àº°íµñ", Font.BOLD, 15));
-			iceBeverage_labelsPrices[i].setForeground(new Color(192, 57, 43));
+			iceBeverage_labelsPrices[i].setForeground(new Color(192, 57, 43)); //°¡°ÝÇ¥»ö
+			iceBeverage_labelsPrices[i].setBounds(60, 100, 200, 150);
 			
 			
-			//¹öÆ° À§Ä¡ ÁöÁ¤ÇÏ°í
 			//ÀÌ¹ÌÁö ºÎÂø
 			
-			
+			iceBeverage_panel[i].add(iceBeverage_labelsNames[i]);
+			iceBeverage_panel[i].add(iceBeverage_labelsPrices[i]);
 			iceBeverage_buttons[i].add(iceBeverage_panel[i]);
-			add(iceBeverage_panel[i]);
+			
+			iceBeverage_buttons[i].setBorderPainted(false);
+			iceBeverage_buttons[i].setBackground(Color.white);
+			iceBeverage_buttons[i].setFocusPainted(false);
+			
+			add(iceBeverage_buttons[i]);
 		}
 		
 ////		ÆÇ³Ú
