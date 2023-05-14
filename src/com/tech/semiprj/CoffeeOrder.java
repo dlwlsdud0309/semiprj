@@ -219,7 +219,14 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		System.out.println("신호");
-		System.out.println(e.getActionCommand());
+		
+		for (int i = 0; i < ci.i_strNames.length; i++) {
+			if (e.getSource()==(ci.iceBeverage_buttons[0])) {
+//				String command=e.getActionCommand();
+//				System.out.println(command);
+				System.out.println("배열인덱스[0]으로 확인");
+			}
+		}
 
 		if (e.getSource()==(ch.h_americanoBtn)) {
 	         System.out.println("신호a");
