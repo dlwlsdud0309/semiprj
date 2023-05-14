@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Image;
+import java.util.Arrays;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -81,11 +82,16 @@ public class CoffeeIce extends JPanel{
 			
 			//이미지 부착
 			imageIconChange[i] = new ImageIcon(i_strNames[i]+"png");
-			
+			imageGetImage[i] = imageIconChange[i].getImage();
+			imageGetImage2[i] = imageGetImage[i].getScaledInstance(200, 200, Image.SCALE_SMOOTH);
+			iceBeverage_image[i] = new ImageIcon(imageGetImage2[i]);
+			iceBeverage_imageLabel[i] = new JLabel(iceBeverage_image[i]);
+			iceBeverage_imageLabel[i].setBounds(35,5,100,140);
 			
 			
 			iceBeverage_panel[i].add(iceBeverage_labelsNames[i]);
 			iceBeverage_panel[i].add(iceBeverage_labelsPrices[i]);
+			iceBeverage_panel[i].add(iceBeverage_imageLabel[i]);
 			
 			iceBeverage_buttons[i].add(iceBeverage_panel[i]);
 			iceBeverage_buttons[i].setBorderPainted(false); //버튼외곽선 제거
