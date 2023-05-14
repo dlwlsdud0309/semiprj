@@ -27,8 +27,8 @@ public class CoffeeIce extends JPanel{
 	
 	public CoffeeIce() {
 		setBackground(new Color(230, 230, 230));
-		setLayout(new GridLayout(0, 4, 10, 10));
-		setBounds(8, 8, 0, 540);
+//		setLayout(new GridLayout(0, 4, 10, 10));
+//		setBounds(8, 8, 0, 540);
 		
 		//ÄÄÆ÷³ÍÆ®
 		iceBeverage_panel = new JPanel[i_strNames.length];
