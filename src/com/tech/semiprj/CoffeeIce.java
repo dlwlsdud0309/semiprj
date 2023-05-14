@@ -42,7 +42,8 @@ public class CoffeeIce extends JPanel{
 			iceBeverage_panel[i].setLayout(null);
 			
 			//버튼
-			iceBeverage_buttons[i] = new JButton(i_strNames[i]);
+//			iceBeverage_buttons[i] = new JButton(i_strNames[i]); //i_strNames[i]를 작성했기 때문에 버튼에 이름(상품명)이 나왔던 것
+			iceBeverage_buttons[i] = new JButton();
 			iceBeverage_buttons[i].setPreferredSize(new Dimension(200, 200));
 			
 			//라벨name에 strNames 부착
@@ -66,6 +67,9 @@ public class CoffeeIce extends JPanel{
 			
 			
 			//이미지 부착
+			
+			
+			
 			
 			iceBeverage_panel[i].add(iceBeverage_labelsNames[i]);
 			iceBeverage_panel[i].add(iceBeverage_labelsPrices[i]);
