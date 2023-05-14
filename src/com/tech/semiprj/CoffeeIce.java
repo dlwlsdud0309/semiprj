@@ -3,6 +3,7 @@ package com.tech.semiprj;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.GridLayout;
 import java.awt.Image;
 import java.util.Arrays;
 
@@ -16,10 +17,10 @@ public class CoffeeIce extends JPanel{
 	JButton[] iceBeverage_buttons;
 	JLabel[] iceBeverage_labelsNames, iceBeverage_labelsPrices, iceBeverage_imageLabel;
 	String[] i_strNames = {
-			"(ICE)아메리카노", "(ICE)헤이즐넛 라떼", "(ICE)콜드브루 라떼","(ICE)딸기쿠키프라페"
+			"(ICE)아메리카노", "(ICE)헤이즐넛 라떼", "(ICE)콜드브루 라떼","(ICE)딸기쿠키프라페","(ICE)리얼초코프라페"
 		};
 	String[] i_strPrices = {
-			"2000원", "3200원", "3800원","3900원"
+			"2000원", "3200원", "3800원","3900원","3900원"
 		};
 	ImageIcon[] imageIconChange, iceBeverage_image;
 	Image[] imageGetImage;
