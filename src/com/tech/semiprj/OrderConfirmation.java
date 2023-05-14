@@ -120,6 +120,9 @@ public class OrderConfirmation extends JFrame{
 			         if(entry.getKey()=="(ICE)콜드브루라떼") {
 			            orderStr=orderStr+entry.getKey()+"  "+entry.getValue()+"개\t 3800원\t    \t총액 : "+(3800*entry.getValue())+"원    "+"\n";
 			         }
+			         if(entry.getKey()=="(ICE)딸기쿠키프라페") {
+			        	orderStr=orderStr+entry.getKey()+"  "+entry.getValue()+"개\t 3900원\t    \t총액 : "+(3900*entry.getValue())+"원    "+"\n";
+			         }
 			         if(entry.getKey()=="허니브레드\t") {
 				        orderStr=orderStr+entry.getKey()+"  "+entry.getValue()+"개\t 4500원\t    \t총액 : "+(4500*entry.getValue())+"원    "+"\n";
 			         }
