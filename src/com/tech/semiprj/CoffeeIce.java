@@ -12,8 +12,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class CoffeeIce extends JPanel{
-	
-	//필드 배열 사용
 	JPanel[] iceBeverage_panel;
 	JButton[] iceBeverage_buttons;
 	JLabel[] iceBeverage_labelsNames, iceBeverage_labelsPrices, iceBeverage_imageLabel;
