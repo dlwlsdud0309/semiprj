@@ -125,9 +125,6 @@ public class CoffeeIce2 extends JPanel{
 		i_coldbrewlatteBtn.setBackground(new Color(255,255,255));
 		i_coldbrewlatteBtn.setFocusPainted(false);
 		
-		
-		
-		
 		add(i_americanoBtn);
 		add(i_hazelnutlatteBtn);
 		add(i_coldbrewlatteBtn);
