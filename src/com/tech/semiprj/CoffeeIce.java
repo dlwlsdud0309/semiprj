@@ -24,17 +24,30 @@ public class CoffeeIce extends JPanel{
 	String[] i_strPrices = {
 		"2000원","3200원","3800원"
 	};
-//	JLabel[] iceBeverage_prices;
+
+	ImageIcon[] imageIconChange;
+	Image[] imageGetImage;
+	Image[] imageGetImage2;
+	ImageIcon[] iceBeverage_image;
+	JLabel[] iceBeverage_imageLabel;
 	
 	public CoffeeIce() {
 		
 		setBackground(new Color(230, 230, 230));
 		
+		//컴포넌트
 		iceBeverage_panel = new JPanel[i_strNames.length];
 		iceBeverage_labelsNames = new JLabel[i_strNames.length];
 		iceBeverage_labelsPrices = new JLabel[i_strNames.length];
 		iceBeverage_buttons = new JButton[i_strNames.length];
 		
+		//이미지
+		imageIconChange = new ImageIcon[i_strNames.length];
+		imageGetImage = new Image[i_strNames.length];
+		imageGetImage2 = new Image[i_strNames.length];
+		iceBeverage_image = new ImageIcon[i_strNames.length];
+		iceBeverage_imageLabel = new JLabel[i_strNames.length];
+
 		for (int i = 0; i < i_strNames.length; i++) {
 			//판넬
 			iceBeverage_panel[i] = new JPanel();
@@ -67,7 +80,7 @@ public class CoffeeIce extends JPanel{
 			
 			
 			//이미지 부착
-			
+			imageIconChange[i] = new ImageIcon(i_strNames[i]+"png");
 			
 			
 			
