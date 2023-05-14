@@ -221,7 +221,15 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 		for (int i = 0; i < ci.i_strNames.length; i++) {
 			if (e.getSource()==(ci.iceBeverage_buttons[i])) {
 				if (ci.i_strNames[i]=="(ICE)아메리카노") {
-					System.out.println("(ICE)아메리카노입니다");
+//					System.out.println("(ICE)아메리카노입니다");
+					ordertotal+=2000;
+			        ordermap.put("(ICE)아메리카노",++cnt5);
+				}else if(ci.i_strNames[i]=="(ICE)헤이즐넛 라떼") {
+					ordertotal+=3200;
+					ordermap.put("(ICE)헤이즐넛라떼",++cnt6);
+				}else if(ci.i_strNames[i]=="(ICE)콜드브루 라떼") {
+					ordertotal+=3800;
+			        ordermap.put("(ICE)콜드브루라떼",++cnt7);
 				}
 			}
 		}
