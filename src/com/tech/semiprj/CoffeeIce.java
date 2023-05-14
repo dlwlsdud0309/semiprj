@@ -16,21 +16,12 @@ public class CoffeeIce extends JPanel{
 	//필드 배열 사용
 	JPanel[] iceBeverage_panel;
 	JButton[] iceBeverage_buttons;
-	JLabel[] iceBeverage_labelsNames;
-	JLabel[] iceBeverage_labelsPrices;
-	String[] i_strNames = {
-//		"iceamericano","icehazelnutlatte","icecoldbrewlatte"
-		"(ICE)아메리카노","(ICE)헤이즐넛 라떼","(ICE)콜드브루 라떼"
-	};
-	String[] i_strPrices = {
-		"2000원","3200원","3800원"
-	};
+	JLabel[] iceBeverage_labelsNames, iceBeverage_labelsPrices, iceBeverage_imageLabel;
+	String[] i_strNames = { "(ICE)아메리카노","(ICE)헤이즐넛 라떼","(ICE)콜드브루 라떼" };
+	String[] i_strPrices = { "2000원","3200원","3800원" };
 
-	ImageIcon[] imageIconChange;
-	Image[] imageGetImage;
-	Image[] imageGetImage2;
-	ImageIcon[] iceBeverage_image;
-	JLabel[] iceBeverage_imageLabel;
+	ImageIcon[] imageIconChange, iceBeverage_image;
+	Image[] imageGetImage, imageGetImage2;
 	
 	public CoffeeIce() {
 		
@@ -81,10 +72,9 @@ public class CoffeeIce extends JPanel{
 			
 			
 			//이미지 부착
-			imageIconChange[i] = new ImageIcon(i_strNames[i]+"png");
-			imageGetImage[i] = imageIconChange[i].getImage();
-			imageGetImage2[i] = imageGetImage[i].getScaledInstance(200, 200, Image.SCALE_SMOOTH);
-			iceBeverage_image[i] = new ImageIcon(imageGetImage2[i]);
+			imageIconChange[i] = new ImageIcon(i_strNames[i]+".png");
+			imageGetImage[i] = imageIconChange[i].getImage().getScaledInstance(200, 200, Image.SCALE_SMOOTH);
+			iceBeverage_image[i] = new ImageIcon(imageGetImage[i]);
 			iceBeverage_imageLabel[i] = new JLabel(iceBeverage_image[i]);
 			iceBeverage_imageLabel[i].setBounds(35,5,100,140);
 			
