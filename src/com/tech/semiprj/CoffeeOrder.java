@@ -161,6 +161,9 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 				         if(entry.getKey()=="(ICE)콜드브루라떼") {
 				            orderStr=orderStr+entry.getKey()+"\t"+entry.getValue()+"개\t 3800원\t    \t총액 : "+(3800*entry.getValue())+"원    "+"\n";
 				         }
+				         if(entry.getKey()=="(ICE)딸기쿠키프라페") {
+				        	orderStr=orderStr+entry.getKey()+"\t"+entry.getValue()+"개\t 3900원\t    \t총액 : "+(3900*entry.getValue())+"원    "+"\n";
+				         }
 				         if(entry.getKey()=="허니브레드\t") {
 					        orderStr=orderStr+entry.getKey()+"\t"+entry.getValue()+"개\t 4500원\t    \t총액 : "+(4500*entry.getValue())+"원    "+"\n";
 				         }
@@ -213,7 +216,7 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 	
 //	출력문
 	static HashMap<String, Integer> ordermap=new HashMap<String, Integer>();
-	int cnt1,cnt2,cnt3,cnt4,cnt5,cnt6,cnt7,cnt8,cnt9,cnt10;
+	int cnt1,cnt2,cnt3,cnt4,cnt5,cnt6,cnt7,cnt8,cnt9,cnt10,cnt11;
 	int ordertotal; //필드니까 선언만하면 0으로 초기화
 	
 	@Override
@@ -230,6 +233,9 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 				}else if(ci.i_strNames[i]=="(ICE)콜드브루 라떼") {
 					ordertotal+=3800;
 			        ordermap.put("(ICE)콜드브루라떼",++cnt7);
+				}else if(ci.i_strNames[i]=="(ICE)딸기쿠키프라페") {
+					ordertotal+=3900;
+			        ordermap.put("(ICE)딸기쿠키프라페",++cnt11);
 				}
 			}
 		}
@@ -290,6 +296,8 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 	            orderStr=orderStr+entry.getKey()+"\t"+entry.getValue()+"개\t 3200원\t\t총액 : "+(3200*entry.getValue())+"원"+"\n";
 	         if(entry.getKey()=="(ICE)콜드브루라떼")
 	            orderStr=orderStr+entry.getKey()+"\t"+entry.getValue()+"개\t 3800원\t\t총액 : "+(3800*entry.getValue())+"원"+"\n";
+	         if(entry.getKey()=="(ICE)딸기쿠키프라페")
+	        	orderStr=orderStr+entry.getKey()+"\t"+entry.getValue()+"개\t 3900원\t\t총액 : "+(3900*entry.getValue())+"원"+"\n";
 	         if(entry.getKey()=="허니브레드\t")
 		        orderStr=orderStr+entry.getKey()+"\t"+entry.getValue()+"개\t 4500원\t\t총액 : "+(4500*entry.getValue())+"원"+"\n";
 	         if(entry.getKey()=="말차 스모어 쿠키")
