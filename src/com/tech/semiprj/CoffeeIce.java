@@ -17,14 +17,16 @@ public class CoffeeIce extends JPanel{
 	JPanel[] iceBeverage_panel;
 	JButton[] iceBeverage_buttons;
 	JLabel[] iceBeverage_labelsNames, iceBeverage_labelsPrices, iceBeverage_imageLabel;
-	String[] i_strNames = { "(ICE)아메리카노","(ICE)헤이즐넛 라떼","(ICE)콜드브루 라떼" };
-	String[] i_strPrices = { "2000원","3200원","3800원" };
-
+	String[] i_strNames = {
+			"(ICE)아메리카노", "(ICE)헤이즐넛 라떼", "(ICE)콜드브루 라떼"
+		};
+	String[] i_strPrices = {
+			"2000원", "3200원", "3800원"
+		};
 	ImageIcon[] imageIconChange, iceBeverage_image;
-	Image[] imageGetImage, imageGetImage2;
+	Image[] imageGetImage;
 	
 	public CoffeeIce() {
-		
 		setBackground(new Color(230, 230, 230));
 		
 		//컴포넌트
@@ -36,7 +38,6 @@ public class CoffeeIce extends JPanel{
 		//이미지
 		imageIconChange = new ImageIcon[i_strNames.length];
 		imageGetImage = new Image[i_strNames.length];
-		imageGetImage2 = new Image[i_strNames.length];
 		iceBeverage_image = new ImageIcon[i_strNames.length];
 		iceBeverage_imageLabel = new JLabel[i_strNames.length];
 
