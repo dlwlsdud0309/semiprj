@@ -195,27 +195,14 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 		for (int i = 0; i < ch.h_strNames.length; i++) {
 			ch.hotBeverage_buttons[i].addActionListener(this);
 		}
-//		ch.h_americanoBtn.addActionListener(this);
-//		ch.h_cafemochaBtn.addActionListener(this);
-//		ch.h_vanillalatteBtn.addActionListener(this);
-//		ch.h_tiramisulatteBtn.addActionListener(this);
-		
+
 		for (int i = 0; i < ci.i_strNames.length; i++) {
 			ci.iceBeverage_buttons[i].addActionListener(this);
 		}
 		
-//		ci.i_americanoBtn.addActionListener(this);
-//		ci.i_hazelnutlatteBtn.addActionListener(this);
-//		ci.i_coldbrewlatteBtn.addActionListener(this);
-		
 		for (int i = 0; i < ds.d_strNames.length; i++) {
 			ds.desert_buttons[i].addActionListener(this);
-		}
-		
-//		ds.honeybreadBtn.addActionListener(this);
-//		ds.smorecookiesmatchaBtn.addActionListener(this);
-//		ds.icecreamcroiffleBtn.addActionListener(this);
-		
+		}		
 	}
 
 	
@@ -279,45 +266,7 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 			}
 		}
 
-//		if (e.getSource()==(ch.h_americanoBtn)) {
-//	         System.out.println("신호a");
-//	         ordertotal+=1500;
-//	         ordermap.put("(HOT)아메리카노", ++cnt1);
-//	      }else if (e.getSource()==(ch.h_cafemochaBtn)) {
-//	         System.out.println("신호b");
-//	         ordertotal+=3700;
-//	         ordermap.put("(HOT)카 페 모 카", ++cnt2);
-//	      }else if (e.getSource()==(ch.h_vanillalatteBtn)) {
-//	         System.out.println("신호c");
-//	         ordertotal+=3700;
-//	         ordermap.put("(HOT)바닐라라떼", ++cnt3);
-//	      }else if(e.getSource()==(ch.h_tiramisulatteBtn)) {
-//	         ordertotal+=3900;
-//	         ordermap.put("(HOT)티라미수라떼",++cnt4);
-//	      아이스
-//	      }else if(e.getSource()==(ci.i_americanoBtn)) {
-//	         ordertotal+=2000;
-//	         ordermap.put("(ICE)아메리카노",++cnt5);
-//	      }else if(e.getSource()==(ci.i_hazelnutlatteBtn)) {
-//	         ordertotal+=3200;
-//	         ordermap.put("(ICE)헤이즐넛라떼",++cnt6);
-//	      }else if(e.getSource()==(ci.i_coldbrewlatteBtn)) {
-//	         ordertotal+=3800;
-//	         ordermap.put("(ICE)콜드브루라떼",++cnt7);
-//	      디저트
-//	      } else
-//	    	  if(e.getSource()==(ds.honeybreadBtn)) {
-//		     ordertotal+=4500;
-//		     ordermap.put("허니브레드\t",++cnt8);
-//	      } else if(e.getSource()==(ds.smorecookiesmatchaBtn)) {
-//	    	 ordertotal+=2900;
-//		     ordermap.put("말차 스모어 쿠키",++cnt9);
-//		  }	else if(e.getSource()==(ds.icecreamcroiffleBtn)) {
-//			 ordertotal+=3000;
-//			 ordermap.put("아이스크림크로플",++cnt10);
-//		  }
-		
-	      String orderStr="";
+		String orderStr="";
 	      
 	      
 	      for (Entry<String,Integer> entry : ordermap.entrySet()) {
