@@ -18,10 +18,10 @@ public class CoffeeHot extends JPanel{
 	JLabel[] hotBeverage_labelsNames, hotBeverage_labelsPrices, hotBeverage_imageLabel;
 	String[] h_strNames = {
 			"(HOT)아메리카노", "(HOT)카페모카", "(HOT)바닐라라떼", "(HOT)티라미수라떼"
-		};
+	};
 	String[] h_strPrices = {
 			"1500원", "3700원", "3700원", "3900원"
-		};
+	};
 	ImageIcon[] imageIconChange, hotBeverage_image;
 	Image[] imageGetImage;
 	
