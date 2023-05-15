@@ -13,17 +13,17 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class CoffeeIce extends JPanel{
-	JPanel[] iceBeverage_panel;
-	JButton[] iceBeverage_buttons;
-	JLabel[] iceBeverage_labelsNames, iceBeverage_labelsPrices, iceBeverage_imageLabel;
-	String[] i_strNames = {
+	protected JPanel[] iceBeverage_panel;
+	protected JButton[] iceBeverage_buttons;
+	protected JLabel[] iceBeverage_labelsNames, iceBeverage_labelsPrices, iceBeverage_imageLabel;
+	protected String[] i_strNames = {
 			"(ICE)아메리카노", "(ICE)헤이즐넛라떼", "(ICE)콜드브루라떼","(ICE)딸기쿠키프라페" //, "(ICE)리얼초코프라페" 
 		};
-	String[] i_strPrices = {
+	protected String[] i_strPrices = {
 			"2000원", "3200원", "3800원", "3900원" //, "3900원"
 		};
-	ImageIcon[] imageIconChange, iceBeverage_image;
-	Image[] imageGetImage;
+	protected ImageIcon[] imageIconChange, iceBeverage_image;
+	protected Image[] imageGetImage;
 	
 	public CoffeeIce() {
 		setBackground(new Color(230, 230, 230));
