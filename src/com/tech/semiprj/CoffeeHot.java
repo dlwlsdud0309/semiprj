@@ -20,13 +20,6 @@ public class CoffeeHot extends JPanel{
 			h_vanillalatteName, h_vanillalattePrice, h_tiramisulatteName, h_tiramisulattePrice;
 	public String hotStr="";
 	
-//	List<String> h_menu=new LinkedList<String>();
-//	List<JButton> btn=new LinkedList<>();
-//	String h_americano, h_cafemocha, h_vanillalatte, h_tiramisulatte;
-	
-	///////////////////////////////
-//	MainCoffeeOrder mainPanel;
-	//////////////////////////////
 	
 	public CoffeeHot() {
 		setBackground(new Color(230, 230, 230));
@@ -179,37 +172,6 @@ public class CoffeeHot extends JPanel{
 		add(h_cafemochaBtn);
 		add(h_vanillalatteBtn);
 		add(h_tiramisulatteBtn);
-		
-//		menuPanel.add(h_americanoBtn);
-//		menuPanel.add(h_cafemochaBtn);
-//		menuPanel.add(h_vanillalatteBtn);
-//		menuPanel.add(h_tiramisulatteBtn);
-//		
-//		add(menuPanel,"North");
-//----------------------------------------------------//
-//		이미지 가져오기
-//		img=new ImageIcon[4];
-//		img[0]=new ImageIcon("hotamericano.png");
-//		img[1]=new ImageIcon();
-//		img[2]=new ImageIcon();
-//		img[3]=new ImageIcon();
-		
-		
-//		사이즈 조절
-//		hotamericanoSize=img[0].getImage().getScaledInstance(100, 120, Image.SCALE_SMOOTH);
-		
-//		img[0]=new ImageIcon(hotamericanoSize);
-//----------------------------------------------------//
-//		h_menu.add("h_americano");
-//		h_menu.add("h_cafemocha");
-//		h_menu.add("h_vanillalatte");
-//		h_menu.add("h_tiramisulatte");
-		
-//		for (int i = 0; i < h_menu.size(); i++) {
-//			h_menu[i]=new JButton(btn[h_menu]);
-//		}
-		
-		
 		
 	}
 }
