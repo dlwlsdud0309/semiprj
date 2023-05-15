@@ -195,6 +195,9 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 		
 		
 //		actionlistener 부착
+		for (int i = 0; i < ch.hotBeverage_labelsNames.length; i++) {
+			ch.hotBeverage_buttons[i].addActionListener(this);
+		}
 //		ch.h_americanoBtn.addActionListener(this);
 //		ch.h_cafemochaBtn.addActionListener(this);
 //		ch.h_vanillalatteBtn.addActionListener(this);
@@ -221,6 +224,25 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		
+		for (int i = 0; i < ch.h_strNames.length; i++) {
+			if (e.getSource()==(ch.hotBeverage_buttons[i])) {
+				if (ch.h_strNames[i]=="(HOT)아메리카노") {
+					ordertotal+=1500;
+			        ordermap.put("(HOT)아메리카노",++cnt1);
+				}else if(ch.h_strNames[i]=="(HOT)카페모카") {
+					ordertotal+=3700;
+					ordermap.put("(HOT)카 페 모 카",++cnt2);
+				}else if(ch.h_strNames[i]=="(HOT)바닐라라떼") {
+					ordertotal+=3700;
+			        ordermap.put("(HOT)바닐라라떼",++cnt3);
+				}else if(ch.h_strNames[i]=="(HOT)티라미수라떼") {
+					ordertotal+=3900;
+			        ordermap.put("(HOT)티라미수라떼",++cnt4);
+				}
+			}
+		}
+		
 		for (int i = 0; i < ci.i_strNames.length; i++) {
 			if (e.getSource()==(ci.iceBeverage_buttons[i])) {
 				if (ci.i_strNames[i]=="(ICE)아메리카노") {

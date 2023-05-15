@@ -13,17 +13,17 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class CoffeeIce extends JPanel{
-	protected JPanel[] iceBeverage_panel;
-	protected JButton[] iceBeverage_buttons;
-	protected JLabel[] iceBeverage_labelsNames, iceBeverage_labelsPrices, iceBeverage_imageLabel;
-	protected String[] i_strNames = {
+	JPanel[] iceBeverage_panel;
+	JButton[] iceBeverage_buttons;
+	JLabel[] iceBeverage_labelsNames, iceBeverage_labelsPrices, iceBeverage_imageLabel;
+	String[] i_strNames = {
 			"(ICE)아메리카노", "(ICE)헤이즐넛라떼", "(ICE)콜드브루라떼","(ICE)딸기쿠키프라페" //, "(ICE)리얼초코프라페" 
 		};
-	protected String[] i_strPrices = {
+	String[] i_strPrices = {
 			"2000원", "3200원", "3800원", "3900원" //, "3900원"
 		};
-	protected ImageIcon[] imageIconChange, iceBeverage_image;
-	protected Image[] imageGetImage;
+	ImageIcon[] imageIconChange, iceBeverage_image;
+	Image[] imageGetImage;
 	
 	public CoffeeIce() {
 		setBackground(new Color(230, 230, 230));
@@ -59,12 +59,15 @@ public class CoffeeIce extends JPanel{
 			iceBeverage_labelsNames[i].setForeground(new Color(51,51,51)); //이름표색
 //			iceBeverage_labelsNames[i].setBounds(0, 80, 150, 150);
 //			iceBeverage_labelsNames[i].setHorizontalAlignment(JLabel.CENTER);
-			
-			if(i_strNames[i]==("(ICE)아메리카노")) {
+						
+			if(i_strNames[i].length()==10) {
 				iceBeverage_labelsNames[i].setBounds(25, 80, 150, 150);
-			}else {
+			}else if(i_strNames[i].length()==11) {
 				iceBeverage_labelsNames[i].setBounds(15, 80, 150, 150);
+			}else if(i_strNames[i].length()>11) {
+				iceBeverage_labelsNames[i].setBounds(12, 80, 150, 150);
 			}
+			
 			
 			//라벨prices에 strPrices 부착
 			iceBeverage_labelsPrices[i] = new JLabel(i_strPrices[i]);
