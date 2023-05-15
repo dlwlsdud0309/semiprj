@@ -19,6 +19,12 @@ public class CoffeeHot extends JPanel{
 //	JLabel h_americanoName, h_americanoPrice, h_cafemochaName, h_cafemochaPrice,
 //			h_vanillalatteName, h_vanillalattePrice, h_tiramisulatteName, h_tiramisulattePrice;
 	
+	JPanel[] hotBeverage_panel;
+	JButton[] hotBeverage_buttons;
+	JLabel[] hotBeverage_labelsNames, hotBeverage_labelsPrices, hotBeverage_imageLabel;
+	String[] h_strNames = {
+			"(HOT)아메리카노","(HOT)카페모카","(HOT)바닐라라떼","(HOT)티라미수라떼"
+	};
 	
 	public CoffeeHot() {
 		setBackground(new Color(230, 230, 230));
