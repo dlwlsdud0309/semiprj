@@ -44,7 +44,7 @@ public class CoffeeHot extends JPanel{
 			hotBeverage_panel[i] = new JPanel();
 			hotBeverage_panel[i].setOpaque(false);
 			hotBeverage_panel[i].setLayout(null);
-			
+						
 			hotBeverage_buttons[i] = new JButton();
 			hotBeverage_buttons[i].setPreferredSize(new Dimension(200, 200));
 	

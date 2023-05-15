@@ -49,13 +49,10 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 	JButton cardPaymentBtn, resetBtn;
 	JLabel creditCardLabel, cardPaymentLabel;
 
-	
-	
-	
+
 	static JTabbedPane pane;
 	
 	public CoffeeOrder() {
-		
 		
 		setTitle("주문하기");
 		setLayout(new BorderLayout());
@@ -210,9 +207,11 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 //		ci.i_americanoBtn.addActionListener(this);
 //		ci.i_hazelnutlatteBtn.addActionListener(this);
 //		ci.i_coldbrewlatteBtn.addActionListener(this);
-		ds.honeybreadBtn.addActionListener(this);
-		ds.smorecookiesmatchaBtn.addActionListener(this);
-		ds.icecreamcroiffleBtn.addActionListener(this);
+		
+		
+//		ds.honeybreadBtn.addActionListener(this);
+//		ds.smorecookiesmatchaBtn.addActionListener(this);
+//		ds.icecreamcroiffleBtn.addActionListener(this);
 		
 	}
 
@@ -289,16 +288,16 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 //	         ordermap.put("(ICE)콜드브루라떼",++cnt7);
 //	      디저트
 //	      } else
-	    	  if(e.getSource()==(ds.honeybreadBtn)) {
-		     ordertotal+=4500;
-		     ordermap.put("허니브레드\t",++cnt8);
-	      } else if(e.getSource()==(ds.smorecookiesmatchaBtn)) {
-	    	 ordertotal+=2900;
-		     ordermap.put("말차 스모어 쿠키",++cnt9);
-		  }	else if(e.getSource()==(ds.icecreamcroiffleBtn)) {
-			 ordertotal+=3000;
-			 ordermap.put("아이스크림크로플",++cnt10);
-		  }
+//	    	  if(e.getSource()==(ds.honeybreadBtn)) {
+//		     ordertotal+=4500;
+//		     ordermap.put("허니브레드\t",++cnt8);
+//	      } else if(e.getSource()==(ds.smorecookiesmatchaBtn)) {
+//	    	 ordertotal+=2900;
+//		     ordermap.put("말차 스모어 쿠키",++cnt9);
+//		  }	else if(e.getSource()==(ds.icecreamcroiffleBtn)) {
+//			 ordertotal+=3000;
+//			 ordermap.put("아이스크림크로플",++cnt10);
+//		  }
 		
 	      String orderStr="";
 	      
