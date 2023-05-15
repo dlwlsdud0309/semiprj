@@ -195,10 +195,10 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 		
 		
 //		actionlistener 부착
-		ch.h_americanoBtn.addActionListener(this);
-		ch.h_cafemochaBtn.addActionListener(this);
-		ch.h_vanillalatteBtn.addActionListener(this);
-		ch.h_tiramisulatteBtn.addActionListener(this);
+//		ch.h_americanoBtn.addActionListener(this);
+//		ch.h_cafemochaBtn.addActionListener(this);
+//		ch.h_vanillalatteBtn.addActionListener(this);
+//		ch.h_tiramisulatteBtn.addActionListener(this);
 		
 		for (int i = 0; i < ci.iceBeverage_labelsNames.length; i++) {
 			ci.iceBeverage_buttons[i].addActionListener(this);
@@ -240,21 +240,21 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 			}
 		}
 
-		if (e.getSource()==(ch.h_americanoBtn)) {
-	         System.out.println("신호a");
-	         ordertotal+=1500;
-	         ordermap.put("(HOT)아메리카노", ++cnt1);
-	      }else if (e.getSource()==(ch.h_cafemochaBtn)) {
-	         System.out.println("신호b");
-	         ordertotal+=3700;
-	         ordermap.put("(HOT)카 페 모 카", ++cnt2);
-	      }else if (e.getSource()==(ch.h_vanillalatteBtn)) {
-	         System.out.println("신호c");
-	         ordertotal+=3700;
-	         ordermap.put("(HOT)바닐라라떼", ++cnt3);
-	      }else if(e.getSource()==(ch.h_tiramisulatteBtn)) {
-	         ordertotal+=3900;
-	         ordermap.put("(HOT)티라미수라떼",++cnt4);
+//		if (e.getSource()==(ch.h_americanoBtn)) {
+//	         System.out.println("신호a");
+//	         ordertotal+=1500;
+//	         ordermap.put("(HOT)아메리카노", ++cnt1);
+//	      }else if (e.getSource()==(ch.h_cafemochaBtn)) {
+//	         System.out.println("신호b");
+//	         ordertotal+=3700;
+//	         ordermap.put("(HOT)카 페 모 카", ++cnt2);
+//	      }else if (e.getSource()==(ch.h_vanillalatteBtn)) {
+//	         System.out.println("신호c");
+//	         ordertotal+=3700;
+//	         ordermap.put("(HOT)바닐라라떼", ++cnt3);
+//	      }else if(e.getSource()==(ch.h_tiramisulatteBtn)) {
+//	         ordertotal+=3900;
+//	         ordermap.put("(HOT)티라미수라떼",++cnt4);
 //	      아이스
 //	      }else if(e.getSource()==(ci.i_americanoBtn)) {
 //	         ordertotal+=2000;
@@ -266,7 +266,8 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 //	         ordertotal+=3800;
 //	         ordermap.put("(ICE)콜드브루라떼",++cnt7);
 //	      디저트
-	      } else if(e.getSource()==(ds.honeybreadBtn)) {
+//	      } else
+	    	  if(e.getSource()==(ds.honeybreadBtn)) {
 		     ordertotal+=4500;
 		     ordermap.put("허니브레드\t",++cnt8);
 	      } else if(e.getSource()==(ds.smorecookiesmatchaBtn)) {
