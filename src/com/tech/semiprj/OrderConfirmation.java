@@ -19,18 +19,14 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import com.tech.semiprj.CoffeeOrder;
-import com.tech.semiprj.CompletePayment;
-
 public class OrderConfirmation extends JFrame {
 	
 	Connection cn;
 
 	JTextArea totalAmount;
 
-	CoffeeHot ch;
 	CoffeeOrder co;
-	CompletePayment cp;
+	//CompletePayment cp;
 
 	JButton[] oc_buttons;
 	JPanel[] oc_panels;
@@ -91,7 +87,7 @@ public class OrderConfirmation extends JFrame {
 								dispose();
 							}
 						});
-					}else if(oc_strButton[j]=="결제하기") {
+					}else {
 						oc_buttons[j].setBackground(new Color(243,156,18));
 						oc_buttons[j].addActionListener(new ActionListener() {
 							
@@ -134,6 +130,7 @@ public class OrderConfirmation extends JFrame {
 								        orderStr=orderStr+entry.getKey()+"  "+entry.getValue()+"개\t 3000원\t    \t총액 : "+(3000*entry.getValue())+"원    "+"\n";
 							         }
 								}
+								
 								cn=makeConnection();
 								Statement stmt;
 								String receiptSql="insert into coffeereceipt values(order_SEQ.NEXTVAL,'"+orderStr+"')";
@@ -145,7 +142,7 @@ public class OrderConfirmation extends JFrame {
 									e1.printStackTrace();
 								}
 								
-								
+								CompletePayment cp = new CompletePayment();
 								dispose();
 								
 								ResultSet rs;
