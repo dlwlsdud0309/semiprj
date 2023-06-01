@@ -51,12 +51,12 @@ public class OrderConfirmation extends JFrame {
 			oc_panels[i] = new JPanel();
 
 			if(oc_strPanel[i]=="topP") {
+				add(oc_panels[i],BorderLayout.NORTH);
 				oc_panels[i].setBackground(new Color(248, 101, 12));
 				oc_panels[i].add(checkLabel);
-				add(oc_panels[i],BorderLayout.NORTH);
 			}else if(oc_strPanel[i]=="centerP") {
-				oc_panels[i].add(totalAmount);
 				add(oc_panels[i],BorderLayout.CENTER);
+				oc_panels[i].add(totalAmount);
 			}else if(oc_strPanel[i]=="downP") {
 				add(oc_panels[i],BorderLayout.SOUTH);
 				for (int j = 0; j < oc_strButton.length; j++) {
@@ -77,6 +77,7 @@ public class OrderConfirmation extends JFrame {
 								dispose();
 							}
 						});
+						
 					}else { //결제하기
 						oc_buttons[j].setBackground(new Color(243,156,18));
 						oc_buttons[j].addActionListener(new ActionListener() {
