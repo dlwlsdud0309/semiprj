@@ -1,4 +1,4 @@
-package com.tech.semiprj;
+package com.tech.semiprjOrigin;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,7 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class CoffeeIce2 extends JPanel{
+public class CoffeeIce_RefactoringinProgress extends JPanel{
 	JPanel[] iceBeverage_panel;
 	JButton[] iceBeverage_buttons;
 	JLabel[] iceBeverage_labelsNames, iceBeverage_labelsPrices, iceBeverage_imageLabel;
@@ -25,7 +25,7 @@ public class CoffeeIce2 extends JPanel{
 	ImageIcon[] imageIconChange, iceBeverage_image;
 	Image[] imageGetImage;
 	
-	public CoffeeIce2() {
+	public CoffeeIce_RefactoringinProgress() {
 		setBackground(new Color(230, 230, 230));
 //		setLayout(new GridLayout(0, 4, 10, 10));
 //		setBounds(8, 8, 0, 540);

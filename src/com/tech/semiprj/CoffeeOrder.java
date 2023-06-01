@@ -39,7 +39,6 @@ public class CoffeeOrder extends JFrame implements ActionListener{
 	CoffeeHot ch;
 	CoffeeIce ci;
 	Dessert ds;
-	PointSystem ps;
 	OrderConfirmation oc;
 	
 	
