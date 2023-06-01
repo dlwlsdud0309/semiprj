@@ -73,7 +73,6 @@ public class OrderConfirmation extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//co.getOrdermap().clear();
 				co.ordermap.clear();
 				new CoffeeOrder(); //초기화하고 처음화면으로 돌아가기
 				dispose();
@@ -97,7 +96,7 @@ public class OrderConfirmation extends JFrame{
 				System.out.println("결제하기 클릭");
 				
 				String orderStr="";
-				for (Entry<String,Integer> entry : co.getOrdermap().entrySet()) {
+				for (Entry<String,Integer> entry : co.ordermap.entrySet()) {
 			         System.out.println("key : "+entry.getKey()+", value : "+entry.getValue());
 			         
 			         if(entry.getKey()=="(HOT)아메리카노") {
