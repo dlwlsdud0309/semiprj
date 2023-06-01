@@ -12,7 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class CoffeeIce extends JPanel{
+public class CoffeeIce2 extends JPanel{
 	JPanel[] iceBeverage_panel;
 	JButton[] iceBeverage_buttons;
 	JLabel[] iceBeverage_labelsNames, iceBeverage_labelsPrices, iceBeverage_imageLabel;
@@ -25,8 +25,10 @@ public class CoffeeIce extends JPanel{
 	ImageIcon[] imageIconChange, iceBeverage_image;
 	Image[] imageGetImage;
 	
-	public CoffeeIce() {
+	public CoffeeIce2() {
 		setBackground(new Color(230, 230, 230));
+//		setLayout(new GridLayout(0, 4, 10, 10));
+//		setBounds(8, 8, 0, 540);
 		
 		//컴포넌트
 		iceBeverage_panel = new JPanel[i_strNames.length];
@@ -47,6 +49,7 @@ public class CoffeeIce extends JPanel{
 			iceBeverage_panel[i].setLayout(null);
 			
 			//버튼
+//			iceBeverage_buttons[i] = new JButton(i_strNames[i]); //i_strNames[i]를 작성했기 때문에 버튼에 이름(상품명)이 나왔던 것
 			iceBeverage_buttons[i] = new JButton();
 			iceBeverage_buttons[i].setPreferredSize(new Dimension(200, 200));
 			
@@ -54,6 +57,8 @@ public class CoffeeIce extends JPanel{
 			iceBeverage_labelsNames[i] = new JLabel(i_strNames[i]);
 			iceBeverage_labelsNames[i].setFont(new Font("맑은고딕", Font.BOLD, 15)); //폰트 지정
 			iceBeverage_labelsNames[i].setForeground(new Color(51,51,51)); //이름표색
+//			iceBeverage_labelsNames[i].setBounds(0, 80, 150, 150);
+//			iceBeverage_labelsNames[i].setHorizontalAlignment(JLabel.CENTER);
 						
 			if(i_strNames[i].length()==10) {
 				iceBeverage_labelsNames[i].setBounds(25, 80, 150, 150);
