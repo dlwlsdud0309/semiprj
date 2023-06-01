@@ -70,11 +70,10 @@ public class OrderConfirmation extends JFrame {
 
 			if(oc_strPanel[i]=="topP") {
 				setBackground(new Color(248, 101, 12));
-				add(checkLabel);
+				oc_panels[i].add(checkLabel);
 			}else if(oc_strPanel[i]=="centerP") {
-				add(totalAmount);
+				oc_panels[i].add(totalAmount);
 			}else if(oc_strPanel[i]=="downP") {
-				
 				for (int j = 0; j < oc_strButton.length; j++) {
 					oc_buttons[j] = new JButton(oc_strButton[j]);
 					oc_buttons[j].setPreferredSize(new Dimension(100, 50));
