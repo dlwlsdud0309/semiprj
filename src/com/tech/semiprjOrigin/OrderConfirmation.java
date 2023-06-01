@@ -159,8 +159,7 @@ public class OrderConfirmation extends JFrame{
 				}
 			}
 		});
-		
-		
+
 		downP.add(prevBtn);
 		downP.add(orderBtn);
 		
@@ -168,9 +167,7 @@ public class OrderConfirmation extends JFrame{
 		add(centerP,BorderLayout.CENTER);
 		add(downP,BorderLayout.SOUTH);
 		
-		
 	}
-	
 
 	private Connection makeConnection() {
 		Connection con=null;

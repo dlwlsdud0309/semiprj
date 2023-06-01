@@ -22,32 +22,20 @@ import javax.swing.JTextArea;
 public class OrderConfirmation extends JFrame {
 	
 	Connection cn;
-
 	JTextArea totalAmount;
-
 	CoffeeOrder co;
-	//CompletePayment cp;
 
 	JButton[] oc_buttons;
 	JPanel[] oc_panels;
-	
 	JLabel checkLabel;
-	
-	String[] oc_strPanel = {
-		"topP","centerP","downP"
-	};
-	String[] oc_strButton = {
-		"돌아가기","결제하기"	
-	};
-	
-	
+	String[] oc_strPanel = { "topP","centerP","downP" };
+	String[] oc_strButton = { "돌아가기","결제하기" };
 	
 	public OrderConfirmation() { //세부내역 확인하기
 		setTitle("주문확인");
 		setLayout(new BorderLayout());
 		setSize(600,400);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
 
 		oc_panels = new JPanel[oc_strPanel.length];
 		oc_buttons = new JButton[oc_strButton.length];
@@ -61,14 +49,16 @@ public class OrderConfirmation extends JFrame {
 
 		for (int i = 0; i < oc_strPanel.length; i++) {
 			oc_panels[i] = new JPanel();
-//			System.out.println(oc_panels.length); //결과값 3
 
 			if(oc_strPanel[i]=="topP") {
 				oc_panels[i].setBackground(new Color(248, 101, 12));
 				oc_panels[i].add(checkLabel);
+				add(oc_panels[i],BorderLayout.NORTH);
 			}else if(oc_strPanel[i]=="centerP") {
 				oc_panels[i].add(totalAmount);
+				add(oc_panels[i],BorderLayout.CENTER);
 			}else if(oc_strPanel[i]=="downP") {
+				add(oc_panels[i],BorderLayout.SOUTH);
 				for (int j = 0; j < oc_strButton.length; j++) {
 					oc_buttons[j] = new JButton(oc_strButton[j]);
 					oc_buttons[j].setPreferredSize(new Dimension(100, 50));
@@ -87,7 +77,7 @@ public class OrderConfirmation extends JFrame {
 								dispose();
 							}
 						});
-					}else {
+					}else { //결제하기
 						oc_buttons[j].setBackground(new Color(243,156,18));
 						oc_buttons[j].addActionListener(new ActionListener() {
 							
@@ -163,19 +153,8 @@ public class OrderConfirmation extends JFrame {
 					oc_panels[i].add(oc_buttons[j]);
 				}
 			}
-			
-			if(oc_strPanel[i]=="topP") {
-				add(oc_panels[i],BorderLayout.NORTH);
-			}else if(oc_strPanel[i]=="centerP") {
-				add(oc_panels[i],BorderLayout.CENTER);
-			}else if(oc_strPanel[i]=="downP") {
-				add(oc_panels[i],BorderLayout.SOUTH);
-			}
 		}
-		
-		
 
-		
 		setVisible(true);
 	}
 	
