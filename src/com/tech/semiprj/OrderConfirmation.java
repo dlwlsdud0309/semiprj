@@ -15,7 +15,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import com.tech.semiprjOrigin.CoffeeOrder;
+import com.tech.semiprj.CoffeeOrder;
 
 public class OrderConfirmation extends JFrame {
 	
